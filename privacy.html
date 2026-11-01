@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — ClipFit: Video Compressor</title>
+<meta name="description" content="ClipFit compresses videos entirely on your device. It does not collect, upload, or share your videos or personal data.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <span class="mark" aria-hidden="true">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M8 12h8M13 9l3 3-3 3"/></svg>
+    </span>
+    <a class="brand" href="./">ClipFit<small>Video Compressor</small></a>
+    <nav class="doc-switch" aria-label="Legal documents">
+      <a href="privacy.html" aria-current="page">Privacy</a>
+      <a href="terms.html">Terms</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Privacy Policy</h1>
+    <p class="meta">Effective date: November 1, 2026 · Applies to the ClipFit: Video Compressor app for Android (<code>com.hatn.clipfit</code>)</p>
+
+    <div class="summary" role="note">
+      <p><strong>The short version:</strong></p>
+      <ul>
+        <li>Your videos are compressed <strong>entirely on your phone</strong>. They are never uploaded anywhere.</li>
+        <li>We <strong>do not collect, store, sell, or share</strong> any personal data, videos, photos, audio, or metadata.</li>
+        <li>No account, no ads, no analytics, no tracking.</li>
+      </ul>
+    </div>
+
+    <nav class="toc" aria-label="Contents">
+      <ol>
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#no-collection">Zero data collection</a></li>
+        <li><a href="#on-device">What stays on your device</a></li>
+        <li><a href="#permissions">Device permissions</a></li>
+        <li><a href="#purchases">In-app purchases</a></li>
+        <li><a href="#accounts">No user accounts</a></li>
+        <li><a href="#third-parties">Third-party services</a></li>
+        <li><a href="#children">Children's privacy</a></li>
+        <li><a href="#rights">Your privacy rights</a></li>
+        <li><a href="#changes">Changes to this policy</a></li>
+        <li><a href="#contact">Contact us</a></li>
+      </ol>
+    </nav>
+
+    <h2 id="introduction">1. Introduction</h2>
+    <p>ClipFit: Video Compressor ("ClipFit", "the app", "we", "us") is an offline video compression app built by an
+      independent developer. ClipFit is designed around privacy: it does its work on your device and has no servers
+      that receive your content.</p>
+    <p>This Privacy Policy explains what information the app accesses, why, and what happens to it. By using ClipFit,
+      you agree to the practices described here.</p>
+
+    <h2 id="no-collection">2. Zero data collection and transmission</h2>
+    <p>100% of video processing happens <strong>on your device</strong>. ClipFit does <strong>not</strong>:</p>
+    <ul>
+      <li>collect, store on any server, upload, or transmit your videos, photos, audio, or their metadata;</li>
+      <li>collect personal information such as your name, email address, phone number, contacts, or device identifiers;</li>
+      <li>include advertising, analytics, or crash-reporting SDKs;</li>
+      <li>sell, rent, or share any data with third parties.</li>
+    </ul>
+    <p>ClipFit does not request the Android internet permission, so the app itself has no network access.
+      Purchases are handled by the separate Google Play Store app (see <a href="#purchases">In-app purchases</a>), and
+      links such as this policy open in your own web browser.</p>
+    <p>For the Google Play "Data safety" section, ClipFit declares: <strong>no data collected</strong> and
+      <strong>no data shared</strong>.</p>
+
+    <h2 id="on-device">3. What stays on your device</h2>
+    <p>To work, the app keeps a small amount of information locally, in its private app storage on your phone:</p>
+    <ul>
+      <li><strong>Compressed videos you create.</strong> They are saved to your device's video library, in the
+        <code>Movies/ClipFit</code> folder. They are yours; ClipFit never sends them anywhere.</li>
+      <li><strong>Temporary working files</strong> created during compression. They are removed once the
+        compressed copy has been saved to your library. Anything left behind by an interrupted job stays in the app's
+        private storage, which only ClipFit can access.</li>
+      <li><strong>Your Pro status</strong> (whether you own ClipFit Pro), so the app works offline.</li>
+    </ul>
+    <p>This information never leaves your device and is not included in cloud backups by the app. Uninstalling
+      ClipFit removes its private storage. Videos you saved to your library stay there until you delete them.</p>
+    <p><strong>Deleting originals.</strong> If you choose "Replace original", ClipFit first saves and verifies the
+      compressed copy, then asks Android to delete the original. Android shows its own confirmation dialog, and
+      nothing is deleted unless you tap <em>Allow</em>.</p>
+
+    <h2 id="permissions">4. Device permissions explained</h2>
+    <p>ClipFit asks only for the permissions it needs. You can review or revoke them at any time in Android Settings
+      → Apps → ClipFit → Permissions.</p>
+    <div class="card">
+      <div class="perm">
+        <h3>Photos and videos / Storage</h3>
+        <p class="tag"><code>READ_MEDIA_VIDEO</code> (Android 13+), <code>READ_EXTERNAL_STORAGE</code> (Android 12 and
+          below), <code>WRITE_EXTERNAL_STORAGE</code> (Android 9 and below only)</p>
+        <p>Lets you pick the videos you want to compress, lets the app find large videos that could be shrunk, and
+          lets the app save the compressed copy to your video library. Videos are read on your device and are never
+          uploaded.</p>
+      </div>
+      <div class="perm">
+        <h3>Notifications</h3>
+        <p class="tag"><code>POST_NOTIFICATIONS</code> (Android 13+), with a foreground service for media processing</p>
+        <p>Used only to show compression progress, and the result, while the app runs in the background, including
+          in the notification shade and on the lock screen. If you decline, compression still works; you just won't
+          see progress notifications. We never send marketing notifications.</p>
+      </div>
+      <div class="perm">
+        <h3>Location and EXIF metadata</h3>
+        <p class="tag"><code>ACCESS_MEDIA_LOCATION</code>: <strong>not requested</strong></p>
+        <p>ClipFit does not ask for location access, and it never reads, uses, or tracks your location. To keep your
+          gallery in order, the app copies the original <em>recording date</em> to the compressed copy using the
+          standard Android media-library date field, which does not require location access. If a future version
+          ever needs <code>ACCESS_MEDIA_LOCATION</code>, it will be used only to keep a video's own embedded metadata
+          intact on your device. We will update this policy before that change ships.</p>
+      </div>
+    </div>
+
+    <h2 id="purchases">5. In-app purchases</h2>
+    <p>ClipFit offers an optional one-time "ClipFit Pro – Lifetime" purchase. Payments are processed entirely by
+      <strong>Google Play In-App Billing</strong>. We never see, receive, or store your card number, billing address,
+      or other payment details. Google Play only tells the app whether your Google account owns ClipFit Pro, so the
+      app can unlock Pro features and let you restore your purchase.</p>
+    <p>Your payment information is handled under the
+      <a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a> and the
+      <a href="https://play.google.com/about/play-terms/" rel="noopener">Google Play Terms of Service</a>.</p>
+
+    <h2 id="accounts">6. No user accounts</h2>
+    <p>ClipFit does not require, and does not offer, sign-up, log-in, or a personal account. You can use the app
+      without giving us any personal information.</p>
+
+    <h2 id="third-parties">7. Third-party services</h2>
+    <p>The only third-party service the app relies on is Google Play, for app distribution and purchases. When you
+      tap an external link (such as this policy), it opens in your browser, and that website's own privacy policy
+      applies.</p>
+
+    <h2 id="children">8. Children's privacy (COPPA)</h2>
+    <p>ClipFit is a general-audience utility and is <strong>not directed at children under 13</strong>. The app does
+      not knowingly collect personal information from anyone, including children under 13, because it does not
+      collect personal information at all. If you believe a child has provided us with personal information (for
+      example, by email), contact us and we will delete it.</p>
+
+    <h2 id="rights">9. Your privacy rights</h2>
+    <p>Depending on where you live, laws such as the California Consumer Privacy Act (CCPA/CPRA) or the EU/UK General
+      Data Protection Regulation (GDPR) give you rights to access, correct, delete, or opt out of the sale or sharing
+      of your personal information. Because ClipFit does not collect or store personal information on any server,
+      there is nothing for us to access, export, or delete, and we <strong>do not sell or share</strong> personal
+      information. Your on-device data is under your control: you can delete it by clearing the app's storage or
+      uninstalling the app.</p>
+    <p>If you email us, we use your email address and message only to reply to you, and we delete the correspondence
+      when it is no longer needed for that purpose.</p>
+
+    <h2 id="changes">10. Changes to this policy</h2>
+    <p>We may update this Privacy Policy, for example if the app gains new features or permissions. When we do, we
+      will change the effective date above and, for material changes, give notice in the app or on its Google Play
+      listing. Changes take effect when they are posted on this page.</p>
+
+    <h2 id="contact">11. Contact us</h2>
+    <p>Questions or requests about this policy or your privacy? Contact the developer:</p>
+    <p>ClipFit: Video Compressor, Independent Developer<br>
+      Email: <a href="mailto:thuyngocha98@gmail.com">thuyngocha98@gmail.com</a></p>
+    <a class="contact" href="mailto:thuyngocha98@gmail.com?subject=ClipFit%20privacy%20question">Email support</a>
+  </main>
+
+  <footer>
+    © 2026 ClipFit: Video Compressor · <a href="terms.html">Terms of Service</a> · <a href="privacy.html">Privacy Policy</a>
+  </footer>
+</div>
+</body>
+</html>
